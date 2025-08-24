@@ -11,8 +11,8 @@ int main() {
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
        
     // Tamanho do tabuleiro
-    const int linhas = 5;
-    const int colunas = 5;
+    const int linhas = 10;
+    const int colunas = 10;
 
     // Vetores para armazenar coordenadas dos navios
     int navioVertical [3][2]; // navio com 3 partes (linha, coluna)
@@ -26,7 +26,7 @@ int main() {
         navioVertical[i][1] = colunaV; // coluna
     }
     //posição do navio horizontal (linha fixa coluna diferente)
-    int linhaH = 3; //linha fixa
+    int linhaH = 7; //linha fixa
     int colunaInicialH = 5; // começa na coluna 5
     for (int i = 0; i < 4; i++) {
         navioHorizontal[i][0] = linhaH;  //linha
@@ -38,10 +38,17 @@ int main() {
 
     printf("\nNavio Vertical ( 3 partes):\n");
     for (int i = 0; i < 3; i++) {
-        printf("Parte %d -> Linha: %d | coluna: %d\n")
+        printf("Parte %d -> Linha: %d | coluna: %d\n",
+            i+1, navioVertical[i][0], navioVertical[i][1]);
+
     }
 
+    printf("\nNavio Horizontal (4 partes):\n");
+    for (int = 0; i < 4; i++) {
+        printf("Parte %d -> linha: %d | Coluna %d\n", i + 1, navioHorizontal[i][0], navioHorizontal[i][1]);
+    }
 
+    retourn 0;
 
     }
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
